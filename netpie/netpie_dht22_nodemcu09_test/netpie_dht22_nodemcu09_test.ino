@@ -24,7 +24,7 @@ DHT *dht;
 /* SENSOR INFO */
 #define DEVICE_NAME "CMMC-NETPIE-XXX"
 #define AUTHOR      "Nat Weerawan"
-#define BOARD       "DW.ESPMINI"
+#define BOARD       "NODEMCU.9"
 #define SENSOR      "DHT22"
 
 /* WIFI INFO */
@@ -38,9 +38,9 @@ DHT *dht;
 
 
 //DW-MINI-1
-#define DHTPIN 12 // what pin we're connected to
-#define DHT_VCC 13
-#define DHT_GND 14
+//#define DHTPIN 12 // what pin we're connected to
+//#define DHT_VCC 13
+//#define DHT_GND 14
 
 
 ////DW-MINI-2
@@ -48,10 +48,10 @@ DHT *dht;
 //#define DHT_VCC 13
 //#define DHT_GND 16
 
-//// NODE-MCU
-//#define DHT_VCC 5
-//#define DHT_GND 2
-//#define DHTPIN 4 // what pin we're connected to
+//// NODE-MCU-0.9
+#define DHT_VCC 5
+#define DHT_GND 2
+#define DHTPIN 4 // what pin we're connected to
 
 
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
