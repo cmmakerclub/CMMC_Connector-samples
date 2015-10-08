@@ -5,31 +5,32 @@
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 #include <PubSubClient.h>
+#include "FS.h"
 
 MqttConnector *mqtt;
 WiFiConnector *wifi;
 DHT *dht;
 
 
-#define MQTT_HOST        "gearbroker.netpie.io"
+#define MQTT_HOST        "cmmc.xyz"
 #define MQTT_PORT        1883
 #define PUBLISH_EVERY    1*1000 // every 15 seconds
 
 /* comment ทิ้งถ้าไม่ส่ username/password */
-#define MQTT_USERNAME    ""
-#define MQTT_PASSWORD    ""
-#define MQTT_CLIENT_ID   ""
+//#define MQTT_USERNAME    "2syAvlZPSExXY3M%1442743972"
+//#define MQTT_PASSWORD    "EL6tfqlKjgQAmf0vJHpnc8ZzSTg="
+#define MQTT_CLIENT_ID   "gqPFi8OlKxpnw01l"
 #define MQTT_PREFIX      "/HelloChiangMaiMakerClub/gearname"
 
 /* SENSOR INFO */
-#define DEVICE_NAME "MAKER-ASIA-DHT22-001"
+#define DEVICE_NAME "NAT"
 #define AUTHOR      "Nat Weerawan"
 #define BOARD       "DW.ESPMINI-02"
 #define SENSOR      "DHT22"
 
 /* WIFI INFO */
-#define SSID        "NAT.WRTNODE"
-#define PASSPHARSE  "devicenetwork"
+#define SSID        "NAT.MASTER.18"
+#define PASSPHARSE  "Ok(aC$gEb)E{glUt*fej"
 
 #include "init_wifi.h"
 #include "_publish.h"
